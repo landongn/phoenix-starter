@@ -1,0 +1,8 @@
+<nav class="nav" tabindex="-1" onclick="this.focus()">
+  <div class="container">
+    <a class="pagename current" href="#">Endless War</a>
+    <a href="#">One</a>
+    <a href="#">Two</a>
+    <a href="#">Three</a>
+  </div>
+</nav>
