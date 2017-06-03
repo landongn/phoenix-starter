@@ -43,8 +43,8 @@ defmodule Server.IndexController do
   end
 
   def signup(conn, _) do
-    changeset = User.new_account(%User{}, %{})
-    render conn, "signup.html", changeset: changeset
+    changeset = User.changeset(%User{}, %{})
+    render conn, "register.html", changeset: changeset
   end
 
   def register(conn, %{"user" => %{"email" => email, "password" => password, "name" => name}}) do
@@ -66,7 +66,7 @@ defmodule Server.IndexController do
             Logger.info "user failed: #{changeset.changes.email}"
             conn
             |> put_flash(:error, "Cant create an account. Try a different email address")
-            render(conn, "signup.html", changeset: changeset)
+            render(conn, "register.html", changeset: changeset)
         end
       existing ->
         Logger.info "already exists: #{email}"

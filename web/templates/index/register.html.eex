@@ -1,0 +1,27 @@
+<div class="row">
+  <h2 class="col c12">Register an Account</h2>
+</div>
+
+
+
+    <%= form_for @changeset, index_path(@conn, :signup), fn f -> %>
+
+      <fieldset class="row">
+          <label class="col-xs-5" for="name">Name</label>
+          <%= text_input f, :name, class: "col-xs-7", id: "name", placeholder: "John Smith" %>
+          <small>No third parties will ever see this.</small>
+      </fieldset>
+      <fieldset class="row">
+          <label class="col-xs-5" for="email">Email Address</label>
+          <%= text_input f, :email, class: "col-xs-7", id: "email", placeholder: "Email Address" %>
+          <small>No third parties will ever see this.</small>
+      </fieldset>
+      <fieldset class="row">
+      <label class="col-xs-5" for="password">Password</label>
+      <%= text_input f, :password, type: "password", class: "col-xs-7", id: "password" %>
+      <br />
+      </fieldset>
+      <%= submit "Sign up" %>
+    <% end %>
+
+

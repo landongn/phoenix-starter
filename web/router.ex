@@ -28,8 +28,8 @@ defmodule Server.Router do
 
     get "/", IndexController, :index
 
-    get "/signup", IndexController, :signup
-    post "/signup", IndexController, :register
+    get "/register", IndexController, :signup
+    post "/register", IndexController, :register
     post "/login", IndexController, :login
 
     # new prototype area for threejs
@@ -37,8 +37,6 @@ defmodule Server.Router do
 
   scope "/cms", Server do
     pipe_through :authenticated
-    resources "/classes", ClassController
-    resources "/updates", UpdateController
     resources "/users", UserController
   end
 end

@@ -5,6 +5,7 @@ defmodule Server.User do
     field :username, :string
     field :email_address, :string
     field :password_hash, :string
+    field :password, :string, virtual: true
     field :banned, :boolean, default: false
     field :muted, :boolean, default: false
 
@@ -16,13 +17,7 @@ defmodule Server.User do
   """
   def changeset(struct, params \\ %{}) do
     struct
-    |> cast(params, [:username, :email_address, :password_hash, :banned, :muted])
-    |> validate_required([:username, :email_address, :password_hash, :banned, :muted])
-  end
-
-  def new_account(struct, params \\ %{}) do
-    struct
-    |> cast(params, [:name, :password, :email])
-    |> validate_required([:email, :password, :name])
+    |> cast(params, [:username, :email_address, :password_hash])
+    |> validate_required([:username, :email_address, :password_hash])
   end
 end
