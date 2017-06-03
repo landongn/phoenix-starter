@@ -1,9 +1,6 @@
 <div class="row">
   <h2 class="col c12">Register an Account</h2>
 </div>
-
-
-
     <%= form_for @changeset, index_path(@conn, :signup), fn f -> %>
 
       <fieldset class="row">

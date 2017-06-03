@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Play this game, it will change your life.">
+    <meta name="description" content="Phoenix Simple Starter Pack.">
     <meta name="author" content="@landongn">
     <meta property="og:title" content="" />
-    <meta property="og:type" content="video.game" />
+    <meta property="og:type" content="web.software" />
     <meta property="og:url" content="" />
     <meta property="og:image" content="" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/min/1.5/min.min.css">
-    <title>Endless War</title>
+    <title>Simple Phoenix.starter pack</title>
     <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
       <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
     </head>
@@ -20,7 +20,7 @@
       <!-- primary nav --> 
       <main role="main">
         <nav class="nav" tabindex="-1">
-        <a class="root_logo" href="/">Endless War</a>
+        <a class="root_logo" href="/">Simple Phoenix Starter Pack</a>
           <div class="navigation_container">
             <a href="/about">About</a>
             <a href="/register">Register</a>
@@ -36,9 +36,6 @@
       </main>
     
     <!-- junk below --> 
-    <footer>
-      written and run by <a href="https://twitter.com/landongn">@landongn</a>
-    </footer>
     <script src="<%= static_path(@conn, "/js/vendor.js") %>"></script>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
     <script>
@@ -47,7 +44,7 @@
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-50625756-2', 'auto');
+      ga('create', '[[YOUR_CODE_GOES_HERE]]', 'auto');
       ga('send', 'pageview');
 
     </script>
