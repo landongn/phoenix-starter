@@ -18,7 +18,5 @@
 // Local files can be imported directly using relative
 // paths "./socket" or full ones "web/static/js/socket".
 
-import Game from './game';
-
-const lord = new Game();
+console.log("running");
 

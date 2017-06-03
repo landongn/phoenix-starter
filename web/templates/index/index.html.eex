@@ -1,8 +1,11 @@
-<nav class="nav" tabindex="-1" onclick="this.focus()">
-  <div class="container">
-    <a class="pagename current" href="#">Endless War</a>
-    <a href="#">One</a>
-    <a href="#">Two</a>
-    <a href="#">Three</a>
-  </div>
-</nav>
+<section class="p_index">
+
+  <h1>Join the Endless War!</h1>
+  <article>
+    <p>The endless war is an idle game that pits you versus and endless, mindless scourge of robotic swarms.  Once the forces of humanity are wiped out, the machines take over for 24 hours, giving players an opportunity to regroup, forge alliances, construct defense and production facilities, and generate resources. </p>
+    <h3><strong>all of humanity is wiped off the map whenever humanity loses.</strong></h3>
+    <p>The swarm grows in size every 24 hours.  If humanity cannot resist in great enough numbers, doom is assured.</p>
+    <p>Each victory against the machines give you persistant unlocks between realm resets, which happen every week. <br />(Monday @ 12:01 AM PST)</p>
+    <p>There are currently <span class="count">0</span> players in the realm</p>
+  </article>
+</section>
